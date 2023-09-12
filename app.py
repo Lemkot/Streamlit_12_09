@@ -57,7 +57,7 @@ if (SP500_futures):
     API_url = "model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
-    API_data = json_url
+    API_data = json_url.json() 
     st.write(API_data["forecasted_SP_index"])
     
 #-------------------------------------------------------
