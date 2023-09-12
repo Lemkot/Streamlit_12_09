@@ -58,7 +58,7 @@ if (SP500_futures):
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
     API_data = json_url
-    st.write(API_data)
+    st.write(API_data["forecasted_SP_index"])
     
 #-------------------------------------------------------
 # Show the 10 year interest rate
@@ -72,7 +72,7 @@ if (interest_rate):
     API_url = "model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
-    API_data = json_url["forecasted_10y_interest"]
+    API_data = json_url
     st.write(API_data)
     
 #-------------------------------------------------------
@@ -80,7 +80,7 @@ if (interest_rate):
 #-------------------------------------------------------
 
 if (vix_index):
-    st.header('‍10 year interest rate')
+    st.header('VIX index')
 
             #Calling the API : 
 
