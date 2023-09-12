@@ -73,7 +73,7 @@ if (interest_rate):
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
     API_data = json_url
-    st.write(API_data)
+    st.write(API_data["forecasted_10y_interest"])
     
 #-------------------------------------------------------
 # Show the VIX index
@@ -87,7 +87,7 @@ if (vix_index):
     API_url = "http://model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
-    API_data = json_url.get("forecasted_vix_index")
-    st.write(API_data)    
+    API_data = json_url
+    st.write(API_data["forecasted_vix_index"])    
     
 #streamlit run streamlit_app.py
