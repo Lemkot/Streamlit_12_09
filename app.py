@@ -54,7 +54,7 @@ if (SP500_futures):
 
             #Calling the API : 
 
-    API_url = "https://app0709-lemishkotetiana.b4a.run/"
+    API_url = "model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
     API_data = json_url
@@ -87,7 +87,7 @@ if (vix_index):
     API_url = "model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
-    API_data = json_url["forecasted_vix_index"]
+    API_data = json_url.get("forecasted_vix_index")
     st.write(API_data)    
     
 #streamlit run streamlit_app.py
