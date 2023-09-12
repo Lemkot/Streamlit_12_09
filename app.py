@@ -54,7 +54,7 @@ if (SP500_futures):
 
             #Calling the API : 
 
-    API_url = "model1209-lemishkotetiana.b4a.run/"
+    API_url = "http://model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
     API_data = json_url.json() 
@@ -69,7 +69,7 @@ if (interest_rate):
 
             #Calling the API : 
 
-    API_url = "model1209-lemishkotetiana.b4a.run/"
+    API_url = "http://model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
     API_data = json_url
@@ -84,7 +84,7 @@ if (vix_index):
 
             #Calling the API : 
 
-    API_url = "model1209-lemishkotetiana.b4a.run/"
+    API_url = "http://model1209-lemishkotetiana.b4a.run/"
     json_url = get_response(API_url)
     #st.write("## Json {}".format(json_url))
     API_data = json_url.get("forecasted_vix_index")
